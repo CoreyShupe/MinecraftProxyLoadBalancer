@@ -1,11 +1,11 @@
-package com.github.coreyshupe;
+package com.github.coreyshupe.lb.velocity;
 
 import com.fasterxml.jackson.dataformat.toml.TomlMapper;
-import com.github.coreyshupe.api.LoadBalancerInstance;
-import com.github.coreyshupe.api.config.ConfigProvider;
-import com.github.coreyshupe.listeners.VelocityConnectListener;
-import com.github.coreyshupe.listeners.VelocityInitialConnectListener;
-import com.github.coreyshupe.listeners.VelocityLoadBalancerReloadListener;
+import com.github.coreyshupe.lb.api.LoadBalancerInstance;
+import com.github.coreyshupe.lb.api.config.ConfigProvider;
+import com.github.coreyshupe.lb.velocity.listeners.VelocityConnectListener;
+import com.github.coreyshupe.lb.velocity.listeners.VelocityLoadBalancerReloadListener;
+import com.github.coreyshupe.lb.velocity.listeners.VelocityInitialConnectListener;
 import com.google.inject.Inject;
 import com.velocitypowered.api.event.Subscribe;
 import com.velocitypowered.api.event.proxy.ProxyInitializeEvent;

@@ -1,6 +1,6 @@
-package com.github.coreyshupe.listeners;
+package com.github.coreyshupe.lb.velocity.listeners;
 
-import com.github.coreyshupe.api.LoadBalancerInstance;
+import com.github.coreyshupe.lb.api.LoadBalancerInstance;
 import com.velocitypowered.api.event.EventTask;
 import com.velocitypowered.api.event.Subscribe;
 import com.velocitypowered.api.event.connection.DisconnectEvent;

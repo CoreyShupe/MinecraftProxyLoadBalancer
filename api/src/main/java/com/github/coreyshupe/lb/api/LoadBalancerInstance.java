@@ -1,11 +1,11 @@
-package com.github.coreyshupe.api;
+package com.github.coreyshupe.lb.api;
 
-import com.github.coreyshupe.api.cache.MemoryServerBalanceCache;
-import com.github.coreyshupe.api.cache.RedisServerBalanceCache;
-import com.github.coreyshupe.api.cache.ServerBalanceCache;
-import com.github.coreyshupe.api.config.ConfigProvider;
-import com.github.coreyshupe.api.config.LoadBalancerConfig;
-import com.github.coreyshupe.api.config.RedisConfig;
+import com.github.coreyshupe.lb.api.cache.MemoryServerBalanceCache;
+import com.github.coreyshupe.lb.api.cache.RedisServerBalanceCache;
+import com.github.coreyshupe.lb.api.cache.ServerBalanceCache;
+import com.github.coreyshupe.lb.api.config.ConfigProvider;
+import com.github.coreyshupe.lb.api.config.LoadBalancerConfig;
+import com.github.coreyshupe.lb.api.config.RedisConfig;
 
 import java.io.IOException;
 

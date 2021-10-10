@@ -1,4 +1,4 @@
-package com.github.coreyshupe.api.config;
+package com.github.coreyshupe.lb.api.config;
 
 import java.util.function.Consumer;
 
