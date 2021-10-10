@@ -1,4 +1,4 @@
-package com.github.api.config;
+package com.github.coreyshupe.api.config;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.jetbrains.annotations.NotNull;

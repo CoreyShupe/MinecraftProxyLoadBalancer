@@ -1,4 +1,4 @@
-package com.github.api.config;
+package com.github.coreyshupe.api.config;
 
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.core.JsonParser;

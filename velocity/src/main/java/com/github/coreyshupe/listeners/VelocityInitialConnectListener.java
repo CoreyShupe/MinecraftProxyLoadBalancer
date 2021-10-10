@@ -1,6 +1,6 @@
 package com.github.coreyshupe.listeners;
 
-import com.github.api.LoadBalancerInstance;
+import com.github.coreyshupe.api.LoadBalancerInstance;
 import com.velocitypowered.api.event.Continuation;
 import com.velocitypowered.api.event.Subscribe;
 import com.velocitypowered.api.event.player.PlayerChooseInitialServerEvent;

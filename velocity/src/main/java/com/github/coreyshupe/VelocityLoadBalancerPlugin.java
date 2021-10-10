@@ -1,8 +1,8 @@
 package com.github.coreyshupe;
 
 import com.fasterxml.jackson.dataformat.toml.TomlMapper;
-import com.github.api.LoadBalancerInstance;
-import com.github.api.config.ConfigProvider;
+import com.github.coreyshupe.api.LoadBalancerInstance;
+import com.github.coreyshupe.api.config.ConfigProvider;
 import com.github.coreyshupe.listeners.VelocityConnectListener;
 import com.github.coreyshupe.listeners.VelocityInitialConnectListener;
 import com.github.coreyshupe.listeners.VelocityLoadBalancerReloadListener;

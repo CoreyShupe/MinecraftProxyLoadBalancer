@@ -1,7 +1,7 @@
-package com.github.api.cache;
+package com.github.coreyshupe.api.cache;
 
-import com.github.api.config.LoadBalancerConfig;
-import com.github.api.config.RedisConfig;
+import com.github.coreyshupe.api.config.LoadBalancerConfig;
+import com.github.coreyshupe.api.config.RedisConfig;
 import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;
 
