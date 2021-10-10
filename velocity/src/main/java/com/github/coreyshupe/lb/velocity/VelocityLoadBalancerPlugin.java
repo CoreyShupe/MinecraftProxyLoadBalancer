@@ -43,4 +43,8 @@ public class VelocityLoadBalancerPlugin {
         this.proxyServer.getEventManager().register(this, new VelocityInitialConnectListener(this.proxyServer, this.loadBalancerInstance));
         this.proxyServer.getEventManager().register(this, new VelocityLoadBalancerReloadListener(this.logger, this.loadBalancerInstance));
     }
+
+    public LoadBalancerInstance getLoadBalancerInstance() {
+        return loadBalancerInstance;
+    }
 }
