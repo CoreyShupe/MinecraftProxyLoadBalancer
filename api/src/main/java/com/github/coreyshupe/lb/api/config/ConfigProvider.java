@@ -23,7 +23,9 @@ public class ConfigProvider {
     public ConfigProvider(@NotNull ObjectMapper objectMapper, @NotNull Path configPath) {
         this.objectMapper = objectMapper
                 .configure(JsonGenerator.Feature.IGNORE_UNKNOWN, true)
-                .configure(JsonParser.Feature.IGNORE_UNDEFINED, true);
+                .configure(JsonParser.Feature.IGNORE_UNDEFINED, true)
+                .configure(JsonParser.Feature.ALLOW_COMMENTS, true)
+                .configure(JsonParser.Feature.ALLOW_YAML_COMMENTS, true);
         this.configPath = configPath;
         this.reloadHooks = new CopyOnWriteArrayList<>();
         this.memoizedConfig = null;
