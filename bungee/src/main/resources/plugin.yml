@@ -1,0 +1,4 @@
+name: LoadBalancer
+main: com.github.coreyshupe.lb.bungee.BungeeLoadBalancerPlugin
+version: 0.1.0
+author: "Corey Shupe (FiXed)"

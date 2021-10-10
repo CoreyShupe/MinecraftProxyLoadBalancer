@@ -21,13 +21,14 @@
     <modules>
         <module>api</module>
         <module>velocity</module>
+        <module>bungee</module>
     </modules>
 
     <dependencies>
         <dependency>
             <groupId>org.jetbrains</groupId>
             <artifactId>annotations</artifactId>
-            <version>20.1.0</version>
+            <version>22.0.0</version>
             <scope>compile</scope>
         </dependency>
     </dependencies>
