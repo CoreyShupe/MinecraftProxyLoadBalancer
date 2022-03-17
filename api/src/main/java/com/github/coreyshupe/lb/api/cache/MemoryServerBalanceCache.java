@@ -13,7 +13,7 @@ public class MemoryServerBalanceCache implements ServerBalanceCache {
         }
 
         public ServerRecord decrement() {
-            return new ServerRecord(this.id, this.currentPlayerCount + 1);
+            return new ServerRecord(this.id, this.currentPlayerCount - 1);
         }
     }
 
