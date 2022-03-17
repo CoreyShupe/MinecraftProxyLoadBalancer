@@ -11,6 +11,8 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.StandardOpenOption;
+import java.nio.file.attribute.FileAttribute;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
@@ -32,16 +34,19 @@ public class ConfigProvider {
     }
 
     public void saveDefaultConfig(LoadBalancerConfig defaultConfiguration) throws IOException {
-        if (!Files.exists(configPath)) {
+        if (!Files.exists(this.configPath)) {
+            if (!Files.exists(this.configPath.getParent())) {
+                Files.createDirectories(this.configPath.getParent());
+            }
             this.writeConfig(defaultConfiguration);
         }
     }
 
     private LoadBalancerConfig loadConfig0(boolean reload) throws IOException {
-        if (!reload && memoizedConfig != null) {
-            return memoizedConfig;
+        if (!reload && this.memoizedConfig != null) {
+            return this.memoizedConfig;
         }
-        try (InputStream inputStream = Files.newInputStream(configPath)) {
+        try (InputStream inputStream = Files.newInputStream(this.configPath)) {
             return this.memoizedConfig = this.objectMapper.readValue(inputStream, LoadBalancerConfig.class);
         }
     }
@@ -60,7 +65,7 @@ public class ConfigProvider {
     }
 
     public void writeConfig(LoadBalancerConfig config) throws IOException {
-        try (OutputStream outputStream = Files.newOutputStream(this.configPath)) {
+        try (OutputStream outputStream = Files.newOutputStream(this.configPath, StandardOpenOption.CREATE)) {
             this.objectMapper.writeValue(outputStream, config);
         }
     }
